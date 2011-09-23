@@ -10,7 +10,7 @@ phpSettings.session.use_only_cookies = 1
 phpSettings.session.use_trans_sid = 0
 phpSettings.session.cookie_httponly = 1
 phpSettings.session.coolie_lifetime = 0
-phpSettings.session.cookie_domain = ".debian-will.formation.local"
+phpSettings.session.cookie_domain = "debian-will.formation.local"
 phpSettings.session.cookie_secure = 0
 phpSettings.session.hash_function = 1
 phpSettings.session.hash_bits_per_character = 6
@@ -33,10 +33,10 @@ resources.frontController.params.displayExceptions = 0
 resources.frontController.plugins[] = "Application_Plugin_Navigation"
 
 resources.db.adapter = "pdo_mysql"
-resources.db.params.host = "127.0.0.1"
-resources.db.params.username = "site1"
-resources.db.params.password = "0000"
-resources.db.params.dbname = "site1"
+resources.db.params.host = "host"
+resources.db.params.username = "dbuser"
+resources.db.params.password = "dbpasswd"
+resources.db.params.dbname = "base"
 resources.db.params.charset = "UTF8"
 
 resources.layout.layoutPath = APPLICATION_PATH "/layouts"

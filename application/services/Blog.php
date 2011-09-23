@@ -17,7 +17,16 @@ final class Application_Service_Blog
         $categoryMapper = new Application_Model_Mapper_Category();
         return $categoryMapper->find((int) $id); 
     }
-    
+    /**
+     * Find an article
+     * @param int $id
+     * @return Application_Model_Article
+     */
+    public function findArticle($id)
+    {
+        $articleMapper = new Application_Model_Mapper_Article();
+        return $articleMapper->find((int) $id); 
+    }
     /**
      * Finds all articles
      * @return array
@@ -27,7 +36,16 @@ final class Application_Service_Blog
         $articleMapper = new Application_Model_Mapper_Article();
         return $articleMapper->selectAll(); 
     }
-    
+    /**
+     * Finds all categories
+     * 
+     * @return array
+     */
+    public function listAllCategories()
+    {
+        $categoryMapper = new Application_Model_Mapper_Category();
+        return $categoryMapper->selectAll(); 
+    }    
     /**
      * Save a comment
      * @param array|Application_Model_Comment|Zend_Form $comment

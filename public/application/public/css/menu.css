@@ -1,8 +1,0 @@
-#menu ul li>ul {
-    display: none;
-}
-
-#menu ul li:hover>ul {
-    display: block;
-    position: absolute;
-}
